@@ -1,0 +1,48 @@
+/* her er gammeldags CSS-kommentar */
+h1 {
+  font-family: helvetica, arial, sans-serif;
+  font-weight: 100;
+  color: darkblue; }
+
+p {
+  font-family: georgia, serif;
+  color: darkblue; }
+
+button {
+  width: 120px;
+  padding: 10px;
+  background-color: darkblue;
+  color: white;
+  border: none;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  cursor: pointer; }
+
+button:hover {
+  background-color: #000072; }
+
+.menu {
+  list-style: none; }
+  .menu li {
+    display: inline; }
+    .menu li a {
+      font-family: helvetica, arial, sans-serif;
+      text-decoration: none;
+      color: darkblue; }
+      .menu li a:hover {
+        text-decoration: underline; }
+
+.min-kasse, .alt-kasse {
+  width: 200px;
+  height: 200px;
+  background-color: #ddd;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px; }
+
+.alt-kasse {
+  border: 1px solid #333;
+  width: 400px; }
+
+/*# sourceMappingURL=style.css.map */
