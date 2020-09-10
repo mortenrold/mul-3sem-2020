@@ -1,0 +1,15 @@
+body {
+    background-color: $my-background;
+}
+.card {
+    margin-bottom: 20px;
+    @include my-rotate;
+}
+.btn-primary {
+    background-color: $link-color;
+    border-color: darken($link-color, 3%);
+    &:hover {
+        background-color: darken($link-color, 3%);
+        border-color: darken($link-color, 6%);
+    }
+}
