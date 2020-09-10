@@ -1,0 +1,12 @@
+body {
+    background-color: lightblue;
+    margin: 10px;
+}
+h1 {
+    @include my-font;
+    font-size: 40px;
+    margin: 20px 0;
+}
+p {
+    @include my-font;
+}
