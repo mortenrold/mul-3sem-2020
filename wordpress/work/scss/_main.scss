@@ -1,0 +1,59 @@
+.site {
+    padding: 15px;
+}
+.site-header {
+    display: flex;
+    flex-direction: column;
+    // logo
+    .site-title {
+        font-size: 16px;
+        margin: 0;
+        a {
+            color: $font-color;
+            text-decoration: none;
+            font-weight: 600;
+        }
+    }
+    .main-navigation {
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+        margin-top: -20px;
+        // links i menu
+        a {
+            color: lighten($font-color, 25%);
+            font-weight: 600;
+        }
+        // hamburger-knappen
+        .menu-toggle {
+            padding: 0;
+            border: none;
+            background-color: white;
+        }
+        .menu {
+            align-self: flex-start;
+            .nav-menu {
+                margin-top: 30px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .site-header {
+        flex-direction: row;
+        .main-navigation {
+            display: flex;
+            justify-content: flex-end;
+            .menu {
+                align-self: flex-end;
+                .nav-menu {
+                    margin-top: 15px;
+                }
+                .page_item {
+                    margin-left: 15px;
+                }
+            }
+        }
+    }
+}
