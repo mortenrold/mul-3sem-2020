@@ -1,5 +1,7 @@
+
 .site {
-    padding: 15px;
+    padding: $spacer;
+    font-family: lato, sans-serif;
 }
 .site-header {
     display: flex;
@@ -33,10 +35,38 @@
         .menu {
             align-self: flex-start;
             .nav-menu {
-                margin-top: 30px;
+                margin-top: $spacer*2;
             }
         }
     }
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+// overskriftens placering
+.entry-header {
+    max-width: 700px;
+    width: 100%;
+}
+// indholdet centreret på siden 
+.entry-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+// "standardbredden" for content
+p, figure, h1 {
+    max-width: 700px;
+}
+// klasse til billeder, der skal have fuld bredde
+.img-wide {
+    max-width: 100%;
+}
+.site-footer {
+    background-color: #ddd;
 }
 
 @media screen and (min-width: 600px) {
@@ -45,15 +75,26 @@
         .main-navigation {
             display: flex;
             justify-content: flex-end;
-            .menu {
-                align-self: flex-end;
-                .nav-menu {
-                    margin-top: 15px;
-                }
-                .page_item {
-                    margin-left: 15px;
+            .menu-menu-1-container {
+                width: 100%;
+                display: flex;
+                justify-content: flex-end;
+                .menu-item {
+                    margin-left: $spacer;
                 }
             }
         }
+    }
+    // fordeler én paragraf i flere kolonner 
+    .p-columns-2 {
+        column-count: 3;
+    }
+}
+
+// stopklods
+@media screen and (min-width: 1200px) {
+    .site {
+        width: 1200px;
+        margin: 0 auto;
     }
 }
